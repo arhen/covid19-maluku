@@ -40,6 +40,23 @@
 	</head>
 
 	<body>
+
+		<div class="preloader">
+			<div class="loader">
+				<div class="ytp-spinner">
+					<div class="ytp-spinner-container">
+						<div class="ytp-spinner-rotator">
+							<div class="ytp-spinner-left">
+								<div class="ytp-spinner-circle"></div>
+							</div>
+							<div class="ytp-spinner-right">
+								<div class="ytp-spinner-circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--====== HEADER PART START ======-->
 
 		<header class="header-area">
@@ -367,8 +384,25 @@
 		</footer>
 
 	</body>
-	<!-- Script for sticky navbar to top -->
+
 	<script>
+		function fadeOut(el){
+			el.style.opacity = 1;
+
+			(function fade() {
+				if ((el.style.opacity -= .1) < 0) {
+					el.style.display = "none";
+				} else {
+					requestAnimationFrame(fade);
+				}
+			})();
+		};
+		window.addEventListener('load',function(){
+			setTimeout(function() {
+				fadeOut(document.getElementsByClassName("preloader")[0]);
+			}, 500);
+		});
+		// Script for sticky navbar to top
 		window.addEventListener('scroll', function(e) {
 			let scroll = window.scrollY;
 			if (scroll < 20) {
