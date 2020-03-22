@@ -123,6 +123,10 @@ h1.site-title{
 	z-index: 5;
 }
 
+.header-area .navbar-area.sticky {
+    z-index: 999999;
+}
+
 #map {
 	height: 450px;
 }
