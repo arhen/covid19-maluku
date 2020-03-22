@@ -83,13 +83,24 @@
 								<h3 class="title">Layanan Tanggap Darurat Covid-19</h3>
 								<p class="text">Hubungi segera salah satu kontak darurat dibawah ini jika anda ingin
 									mengetahui / mengalami gejala penyakit covid-19</p>
+
+									<div class="header-newslatter">
+										<form action="#">
+											<i class="lni-whatsapp"></i>
+											<input id="wa-text" type="text" placeholder="Ketik pesan disini">
+
+											<div class="header-btn rounded-buttons">
+												<button id="wa-us" class="main-btn rounded-three">WHATSAPP KAMI</button>
+											</div>
+										</form>
+									</div>
 							</div> <!-- row -->
 						</div>
 					</div>
 					<div class="row justify-content-end pb-20">
 						<div class="col-md-4 col-sm-12 pb-20">
 							<div class="single-features text-center">
-								<h3 class="features-title"><a href="#"><i class="lni-phone-handset"></i> (0911)
+								<h3 class="features-title"><a href="#"><i class="lni-headphone-alt"></i> (0911)
 										314245</a></h3>
 								<p class="text">Call Center</p>
 							</div>
@@ -103,11 +114,18 @@
 						</div>
 						<div class="col-md-4 col-sm-12 pb-20">
 							<div class="single-features text-center">
-								<h3 class="features-title"><a href="#"><i class="lni-phone-handset"></i> (+62)
+								<h3 class="features-title"><a href="#"><i class="lni-whatsapp"></i> (+62)
 										81344966375</a></h3>
 								<p class="text">Whatsapp Dinkes Maluku</p>
 							</div>
 						</div>
+						<div class=".col-md-6 .offset-md-3 col-sm-12 mt-30 pb-20">
+							<div class="text-center">
+								atau <a href="#" class="main-btn contact-rs rounded-one"><i class="lni-hospital"></i> Kontak Rumah Sakit
+									Rujukan</a>
+							</div>
+						</div>
+
 					</div> <!-- row -->
 				</div> <!-- container -->
 			</div> <!-- header content area -->
@@ -119,7 +137,7 @@
 					<div class="col-lg-6">
 						<div class="section-title text-center pb-50">
 							<h3 class="title">Angka Kejadian</h3>
-							<p class="text"><i class="lni lni-check-mark-circle"></i> Update Terakhir: Minggu, 22 Mar
+							<p class="text"><i class="lni lni-calendar"></i> Update Terakhir: Minggu, 22 Mar
 								2020 19.45</p>
 						</div> <!-- row -->
 					</div>
@@ -213,8 +231,8 @@
 					<div class="col-lg-6">
 						<div class="section-title text-center mt-40 pb-20">
 							<h3 class="title">Peta Sebaran Virus</h3>
-							<p class="text"><i class="lni lni-check-mark-circle"></i> Update Terakhir: Minggu, 22 Mar
-								2020 19.45</p>
+							<p class="text">Titik lokasi merupakan titik acak (random by system) wilayah
+								yang tertera pada identitas kasus dan tidak menunjuk pada alamat persis masing-masing kasus,</p>
 						</div> <!-- row -->
 					</div>
 				</div> <!-- row -->
@@ -410,6 +428,12 @@
 			} else{
 				document.getElementsByClassName("navbar-area")[0].classList.add("sticky");
 			}
+		});
+
+		document.getElementById('wa-us').addEventListener('click', function () {
+			let text = document.getElementById('wa-text');
+			if(!text.value) text.value = "Halo admin, saya ingin bertanya seputar Penyakit COVID-19."
+			window.open(`https://api.whatsapp.com/send?phone=6281344966375&text=${text.value}`, '_blank');
 		});
 	</script>
 
