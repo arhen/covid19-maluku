@@ -1,0 +1,140 @@
+h1.site-title{
+	font-size: 24px;;
+}
+
+.header-area .navbar-area {
+	padding: 10px 0;
+	background: -webkit-linear-gradient(left, #041044 0%, #1c2e77 100%);
+	background: -o-linear-gradient(left, #041044 0%, #1c2e77 100%);
+	background: linear-gradient(to right, #041044 0%, #1c2e77 100%);
+}
+
+.header-area .header-content-area {
+	background: -webkit-linear-gradient(#adcdf7 0%, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(#adcdf7 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(#adcdf7 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* .section-title .title {
+	color: rgb(18, 18, 18);
+} */
+
+.header-area .header-content-area .header-content {
+	padding-top: 180px;
+}
+
+.single-features {
+	position: relative;
+	background-color: #fff;
+	padding: 32px 45px;
+	/* border: 1px solid #98979c; */
+	border-radius: 2px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .05),
+	0 4px 24px 0 rgba(0, 0, 0, .1);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.single-features .features-title a{
+	color:#8d3fd0;
+}
+.single-features .text{
+	font-weight: 700;
+}
+
+.pricing .pricing-header .sub-title text{
+	font-size: 13px;
+}
+
+.pricing .pricing-header .price text {
+	font-size: 13px;
+}
+
+.pricing .pricing-header .price {
+	font-size: 32px;
+}
+.pricing .pricing-header .pent {
+	font-size: 45px;
+}
+
+.sub-title-x{
+	display: inline-block;
+	padding-right: 65px;
+}
+
+.pricing .pricing-header .sub-title-x .year {
+	margin-top: -20px;
+}
+
+.positif{
+	background: -webkit-linear-gradient(#fc3832, #505050);
+	background: -o-linear-gradient(#fc3832, #797979);
+	background: linear-gradient(#fc3832, #797979);
+}
+
+.pdp-odp {
+	background: -webkit-linear-gradient(#e09f4d, #797979);
+	background: -o-linear-gradient(#e09f4d, #797979);
+	background: linear-gradient(#e09f4d, #797979)
+}
+
+.dead {
+	background: -webkit-linear-gradient(#101010, #3c3c3c);
+	background: -o-linear-gradient(#101010, #3c3c3c);
+	background: linear-gradient(#101010, #3c3c3c);
+}
+
+.about-area .about-content .text {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.single-features-x {
+	position: relative;
+	background-color: #fff;
+	padding: 32px 45px;
+	border: 1px solid #f4f6f7;
+}
+
+.single-features-x .text {
+	font-size: 14px;
+	line-height: 20px;
+	color: #121212;
+	margin-top: 16px;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	position: relative;
+	z-index: 5;
+}
+
+.single-features-x .features-title a {
+	font-size:18px;
+	line-height: 30px;
+	font-weight: 600;
+	color: #121212;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	position: relative;
+	z-index: 5;
+}
+
+#map {
+	height: 450px;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+	.sub-title-x {
+		display: inline-block;
+		padding-right: 25px;
+	}
+
+	.header-area .header-content-area .header-content {
+		padding-top:120px;
+	}
+}
