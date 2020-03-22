@@ -431,9 +431,9 @@
 		});
 
 		document.getElementById('wa-us').addEventListener('click', function () {
-			let text = document.getElementById('wa-text');
-			if(!text.value) text.value = "Halo admin, saya ingin bertanya seputar Penyakit COVID-19."
-			window.open(`https://api.whatsapp.com/send?phone=6281344966375&text=${text.value}`, '_blank');
+			let text = document.getElementById('wa-text').value;
+			if(!text) text = "Halo admin, saya ingin bertanya seputar Penyakit COVID-19."
+			window.open(`https://api.whatsapp.com/send?phone=6281344966375&text=${text}`, '_blank');
 		});
 	</script>
 
